@@ -14,8 +14,8 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'Hé luu cậu!',
-        text: 'Híu muốn hỏi cậu câu này nè, nhớ phải trả lời thật lòng nhaaa.',
+        title: 'Hé luu bé!',
+        text: 'Anh muốn hỏi bé câu này nè, nhớ phải trả lời thật lòng nhaaa.',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Tại vì cậu đẹp trai lắm á hihi <3333 ";
+    var text = " Tại vì anh đẹp trai lắm á hihi <3333 ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,7 +96,7 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Sao mà cậu thích tớ dậyyy :vvvv',
+        title: 'Sao mà bé thích anh dậyyy :vvvv',
         html: true,
         width: 900,
         padding: '3em',
@@ -114,18 +114,18 @@ $('#yes').click(function() {
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho Híu <3'
+        confirmButtonText: 'Gửi cho anh <3'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Tớ biết mà ^^ Yêu cậu 300.000',
-                text: "Bữa sau rảnh mình cùng đi chơi nhaaaa. Còn giờ thì chờ gì nữa mà ko inbox cho tớ đi nàoooooo",
+                title: 'Anh biết mà ^^ Yêu bé 300.000',
+                text: "Bữa sau rảnh mình cùng đi chơi nhaaaa. Còn giờ thì chờ gì nữa mà ko inbox cho anh đi nàoooooo",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
-                    window.location = 'http://fb.com/L.Q.H.Dz.Info';
+                    window.location = 'https://www.facebook.com/profile.php?id=100030810519605';
                   }
             })
         }
